@@ -39,6 +39,7 @@ markdownView.addEventListener('keyup', e =>{
 
     renderMarkdownToHtml(currentContent);
     updateUserInterface(currentContent !== originalContent);
+    openLinksInDefaultBrowser();
 });
 
 markdownView.addEventListener('contextmenu', e =>{
