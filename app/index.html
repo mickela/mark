@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'none'"/> -->
+
+    <title>Mark</title>
+    <!-- <link rel="stylesheet" href="materialize.css"/> -->
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+    <section class="controls">
+        <button id="new-file">New File</button>
+        <button id="open-file">Open File</button>
+        <button id="save-markdown">Save File</button>
+        <button id="revert" disabled>Revert</button>
+        <button id="save-html">Save HTML</button>
+        <button id="show-file">Show File</button>
+        <button id="open-in-default" disabled>Open in Default Application</button>
+    </section>
+
+    <section class="content">
+        <label for="markdown" hidden>Markdown Content</label>
+        <textarea class="raw-markdown" id="markdown"></textarea>
+        <div class="rendered-html" id="html"></div>
+    </section>
+
+    <script>
+        require('./renderer.js');
+    </script>
+</body>
+</html>
