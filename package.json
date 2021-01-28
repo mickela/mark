@@ -13,7 +13,7 @@
   "author": "CodeManiac",
   "license": "MIT",
   "dependencies": {
-    "electron": "^8.2.4",
+    "electron": "^9.4.0",
     "marked": "^1.0.0"
   },
   "devDependencies": {
